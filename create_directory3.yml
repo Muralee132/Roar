@@ -1,0 +1,15 @@
+---
+- name: This playbook is to create a directory
+  hosts: all 
+  become: yes
+  
+  tasks:
+  - name: creating a directory
+    file:
+      path: /home/ansiadmin/loop_directory
+      state: directory
+
+
+
+
+ 
